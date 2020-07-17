@@ -2,17 +2,17 @@
 
 HashSet functionality for DynamicBuffer
 
-##Core idea
+## Core idea
 
 The main idea is to create two buffers, the first for storing user elements, and the second for implementing a hash set.
 
 ![](README/scheme.png)
 
-Two buffers are created. One directly for the user elements and the second one is to implement a hash setfunctionality.
+Two buffers are created. One directly for the user elements and the second one is to implement a hash set functionality.
 The buffer with user elements is fixed in size, but the buffer for the hash set is not. Thus, the second buffer goes beyond 
 the size of the first one and allows you to create chains of elements with the same hash key.
 
-##How to use
+## How to use
 
 ### Step 1
 
@@ -48,6 +48,6 @@ Use hash set functionality
 ![](README/step6.png)
 	
 	
-##Limitations
+## Limitations
 	
 You can add only one hash set buffer per entity.
